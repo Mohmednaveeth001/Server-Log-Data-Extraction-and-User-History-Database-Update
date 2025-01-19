@@ -1,0 +1,24 @@
+2025-01-20 03:42:29,739 - PipelineLogger - INFO - Starting data extraction...
+2025-01-20 03:42:29,740 - root - INFO - Starting email and date extraction.
+2025-01-20 03:42:30,023 - root - INFO - Extracted 0 records.
+2025-01-20 03:42:30,023 - PipelineLogger - INFO - Transforming extracted data...
+2025-01-20 03:42:30,025 - PipelineLogger - INFO - Inserting transformed data into MongoDB...
+2025-01-20 03:42:30,143 - PipelineLogger - INFO - Data successfully inserted into MongoDB.
+2025-01-20 03:42:30,143 - PipelineLogger - INFO - Migrating data to MySQL...
+2025-01-20 03:42:30,190 - PipelineLogger - INFO - Connected to MySQL database.
+2025-01-20 03:42:30,191 - PipelineLogger - INFO - Creating table if it does not exist...
+2025-01-20 03:42:30,213 - PipelineLogger - INFO - Starting data migration...
+2025-01-20 03:42:30,593 - PipelineLogger - INFO - Data successfully migrated to MySQL.
+2025-01-20 03:42:30,631 - PipelineLogger - INFO - MySQL connection closed.
+2025-01-20 03:42:30,655 - PipelineLogger - INFO - Running analysis queries...
+2025-01-20 03:42:30,662 - PipelineLogger - INFO - Connected to MySQL database for analysis.
+2025-01-20 03:42:30,663 - PipelineLogger - INFO - Running query: unique_emails
+2025-01-20 03:42:30,669 - PipelineLogger - INFO - Results for unique_emails:
+2025-01-20 03:42:30,670 - PipelineLogger - INFO - Running query: daily_email_count
+2025-01-20 03:42:30,672 - PipelineLogger - INFO - Results for daily_email_count:
+2025-01-20 03:42:30,673 - PipelineLogger - INFO - Running query: first_last_email
+2025-01-20 03:42:30,674 - PipelineLogger - INFO - Results for first_last_email:
+2025-01-20 03:42:30,674 - PipelineLogger - INFO - Running query: domain_count
+2025-01-20 03:42:30,676 - PipelineLogger - INFO - Results for domain_count:
+2025-01-20 03:42:30,677 - PipelineLogger - INFO - MySQL connection closed.
+2025-01-20 03:42:30,678 - PipelineLogger - INFO - Data pipeline executed successfully.
