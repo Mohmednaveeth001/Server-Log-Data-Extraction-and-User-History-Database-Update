@@ -15,23 +15,23 @@ def main():
         # Extract data
         logger.info("Starting data extraction...")
         extracted_data = extract_emails_and_dates(log_file_path)
-
-        # Transform data
+    
+        # # Transform data
         logger.info("Transforming extracted data...")
         transformed_data = transform_data(extracted_data)
 
-        # Insert into MongoDB
+        # # Insert into MongoDB
         logger.info("Inserting transformed data into MongoDB...")
         insert_into_mongodb(transformed_data, logger)
 
-        # Migrate to MySQL
+        # # Migrate to MySQL
         logger.info("Migrating data to MySQL...")
         migrate_to_mysql(logger)
 
-        # Run analysis
+        # # # Run analysis
         logger.info("Running analysis queries...")
         run_analysis(logger)
-
+        
         logger.info("Data pipeline executed successfully.")
     except Exception as e:
         logger.error(f"Pipeline execution failed: {e}")

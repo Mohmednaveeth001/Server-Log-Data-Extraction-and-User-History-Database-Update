@@ -36,7 +36,7 @@ def migrate_to_mysql(logger):
             cursor.execute(
                 '''INSERT INTO user_history (email, timestamp) VALUES (%s, %s)
                    ON DUPLICATE KEY UPDATE timestamp = VALUES(timestamp)''',
-                (record["email"], record["timestamp"])
+                (record["email"], record["date"])
             )
 
         connection.commit()
